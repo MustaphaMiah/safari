@@ -1,0 +1,51 @@
+{
+    "name": "safari",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "gulp": {
+        "src": {
+            "js": "src/js/",
+            "scss": "src/sass/",
+            "images": "images/",
+            "html": "/",
+            "css": "css/"
+        },
+        "selectors": {
+            "all": "*",
+            "js": "**/*.js",
+            "css": "**/*.css",
+            "scss": "**/*.scss",
+            "html": "**/*.html",
+            "images": "**/*.{png,jpg,jpeg,gif,ico,svg}",
+            "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
+        },
+        "main": {
+            "server": "index.js"
+        }
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MustaphaMiah/safari.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MustaphaMiah/safari/issues"
+    },
+    "homepage": "https://github.com/MustaphaMiah/safari#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-nodemon": "^2.5.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-uglify": "^3.0.2",
+        "uglify-es": "^3.3.9"
+    }
+}
