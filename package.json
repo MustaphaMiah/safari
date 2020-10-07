@@ -9,7 +9,7 @@
             "scss": "src/sass/",
             "images": "images/",
             "html": "/",
-            "css": "css/"
+            "css": "dist/css/"
         },
         "selectors": {
             "all": "*",
