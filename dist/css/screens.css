@@ -7,7 +7,7 @@
 
 nav {
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background: black;
   align-items: center;
@@ -92,25 +92,65 @@ input[type="checkbox"] {
     color: gold; } }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b; }
+  min-height: calc(100vh - 110px);
+  text-align: center; }
+  .content.homepage {
+    position: relative;
+    height: calc(100vh - 80px); }
 
 .content div {
   font-size: 40px;
   font-weight: 700; }
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.img-container {
+  position: relative;
+  height: 100%;
   width: 100%;
+  z-index: 1; }
+  .img-container img {
+    object-fit: cover;
+    object-position: 50% 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.heading-container {
+  color: #fcd703;
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  text-shadow: 2px 2px 2px black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 30px; }
+  .heading-container h2 {
+    text-align: left; }
+
+.grey-screen {
+  opacity: 0.4;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+footer {
+  display: flex;
   background-color: black;
   color: white;
-  text-align: center; }
+  text-align: center;
+  height: 30px;
+  align-items: center;
+  justify-content: center; }
